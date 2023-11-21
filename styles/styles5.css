@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Permanent Marker', cursive;
+    color: #000000;
+    font-size: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    background-color: #ffffff;
+    border: 5px #000000 solid;
+    border-radius: 100%;
+
+    animation-name: fiesta;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+
+    text-align: center;
+    padding: 1vw;
+}
+
+body{
+    background-image: url("../images/fiesta.gif");
+}
+
+header{
+    background-image: url(../images/ezgif-3-ee4dd6d7e1.gif);
+    background-repeat: round;
+    height: 5vw;
+    width: 98vw;
+    font-size: 150%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navegacion {
+    border-bottom: 5px black transparent;
+}
+
+.navegacion>div{
+    background-color: red;
+    height: 5vw;
+    margin: 6vw;
+    border: 5px #000000 solid;
+    border-radius: 100%;
+
+    animation-name: fiesta;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navegacion>div>p{
+    font-size: 65%;
+}
+
+@keyframes fiesta {
+    0%   {background-color: red;}
+   25%  {background-color: blueviolet;}
+   50%  {background-color: orange;}
+   100% {background-color: greenyellow;} 
+    
+}
+
+footer{
+    
+    background-image: url(../images/ezgif-3-ee4dd6d7e1.gif);
+    background-repeat: round;
+    height: auto;
+    width: 98vw;
+    border-top:5px #000000 transparent;
+    font-size: 150%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor, .contenedor>nav, .contenedor>article{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    background-image: url(../images/ezgif-3-ee4dd6d7e1.gif);
+    margin-right: 2vw;
+}
+
+nav{
+    width: 75vw;
+    height: 37vw;
+    background-image: url(../images/ezgif-3-ee4dd6d7e1.gif);
+    background-repeat: round;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+#ola {
+    position: fixed;
+    width: 1vw;
+    height: 1vw;
+    margin-top: 28vw;
+    margin-right: 98vw;
+    z-index: 2;
+}
+
+aside {
+    width: 75vw;
+    height: 37vw;
+    background-image: url(../images/ezgif-3-ee4dd6d7e1.gif);
+    background-repeat: round;
+    margin-right: 1vw;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ricardiv{
+    width: auto;
+    padding: 1vw;
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.ricardiv>div{
+    
+    width: 30vw;
+    border-radius: 100%;
+    border-bottom-left-radius: 75%;
+    border-bottom-right-radius: 75%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ricardiv>div>p {
+    margin: 50px;
+    font-size: 150%;
+}
+
+div>p{
+    padding: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+.Ricardo{
+   width: 175px;
+   height: 175px;
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+#mainricardo {
+    width: 325px;
+   height: 325px;
+}
+
+#fiesta {
+    width: 425px;
+    height: 425px;
+}
+
+@media (768px <= width <= 1024px){
+    .navegacion>div{
+        margin: 3vw;
+        
+    }
+
+    .navegacion {
+        height: auto;
+    }
+
+    nav>div {
+        height: 6vw;
+    }
+
+} 
+
+@media (width < 768px) {
+    header {
+        height: auto;
+        width: auto;
+    }
+
+    .navegacion{
+        margin: 0vw;
+        flex-direction: column;
+    }
+
+    .navegacion>div{
+        margin: 0vw;
+        
+    }
+
+    footer {
+        height: auto;
+        width: auto;
+    }
+
+    nav, aside{
+        display: none;
+    }
+
+    body {
+        align-content: center;
+    }
+
+    .Ricardo{
+        width: auto;
+        height: auto;
+       
+     }
+     
+}

@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Permanent Marker', cursive;
+    color: #000000;
+    font-size: 100%;
+}
+
+p{
+    align-self: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    background-color: #ffffff;
+    border: 5px #000000 solid;
+    border-radius: 100%;
+    text-align: center;
+    padding: 1vw;
+}
+
+body{
+    background-image: url("../images/cesped3.jpg");
+}
+
+header{
+    background-image: url(../images/Ricardo.png);
+    background-repeat: round;
+    height: 5vw;
+    width: 98vw;
+    font-size: 150%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navegacion {
+    border-bottom: 5px black transparent;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+}
+
+.navegacion>div{
+    background-color: #ffffff;
+    height: 5vw;
+    margin: 6vw;
+    border: 5px #000000 solid;
+    border-radius: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navegacion>div>p{
+    font-size: 65%;
+}
+
+footer{
+    
+    background-image: url(../images/Ricardo.png);
+    background-repeat: round;
+    height: 5vw;
+    width: 98vw;
+    border-top:5px #000000 transparent;
+    border-top-right-radius: 25%;
+    border-top-left-radius: 25%;
+    font-size: 150%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor, .contenedor>nav, .contenedor>article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    width: 50vw;
+    height: 80vh;
+    border-radius: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.hola {
+    position: fixed;
+    width: 1vw;
+    height: 1vw;
+    margin-top: 54vh;
+    margin-right: 98vw;
+    z-index: 2;
+}
+
+aside {
+    width: 50vw;
+    height: 80vh;
+    border-radius: 100%;
+    margin-right: 1vw;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ricardiv{
+    width: 98vw;
+    padding: 1vw;
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.ricardiv>div{
+    background-color: #ffffff;
+    width: 30vw;
+    height: 15vw;
+    
+    margin: 10px;
+    border: 10px #000000 solid;
+    border-radius: 100%;
+    border-bottom-left-radius: 75%;
+    border-bottom-right-radius: 75%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ricardiv>div>p {
+    margin: 50px;
+    font-size: 150%;
+}
+
+div>p{
+    padding: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+.Ricardo{
+   width: 175px;
+   height: 175px;
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+#primero {
+    width: auto;
+    height: auto;
+}
+
+#ultimo {
+    height: 25vw;
+    width: auto;
+    padding: 1vw;
+}
+
+@media (768px <= width <= 1024px){
+    .navegacion>div{
+        margin: 3vw;
+        
+    }
+
+    .navegacion {
+        height: auto;
+    }
+
+    nav>div {
+        height: 6vw;
+    }
+
+    #ultimo {
+        height: 40vh;
+        width: auto;
+    }
+
+    .ricardiv>div{
+        width: auto;
+        padding: 2vw;
+            
+    }
+
+} 
+
+@media (width < 768px) {
+    header {
+        height: auto;
+        width: auto;
+    }
+
+    .navegacion{
+        margin: 0vw;
+        flex-direction: column;
+    }
+
+    .navegacion>div{
+        margin: 0vw;
+        
+    }
+
+    footer {
+        height: auto;
+        width: auto;
+    }
+
+    nav, aside{
+        display: none;
+    }
+
+    body {
+        align-content: center;
+    }
+
+    #ultimo {
+        height: 50vh;
+        width: auto;
+    }
+
+    .ricardiv>div{
+        width: auto;
+        padding: 2vw;
+            
+    }
+     
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="./styles/styles4.css">
+    <link rel="icon" type="gif/x-icon" href="./images/favicon.gif">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ricardo</title>
+    
+
+</head>
+<body>
+    <header id="cabecera">
+        <h1>RicardoLandia</h1>
+    </header>
+
+    <header class="navegacion">
+        <div><p><a href="./index.html">PÁGINA DE INICIO</a></p></div>
+        <div><p><a href="./index2.html">¿Ricardo?</a></p></div>
+        <div><p><a href="./index3.html">Versiones de Ricardo</a></p></div>
+        <div><p><a href="./index4.html">Encuesta Ricardil</a></p></div>
+    </header>
+
+    <section class="contenedor">
+
+        
+
+        
+
+        <article class="ricardiv">
+             
+            <div id="primero">
+                <p>PONGA SUS DATOS PARA CONSEGUIR UN PASE TURÍSTICO A RICARDOLANDIA</p>
+            </div>
+
+
+            <div>
+                <form action="#cabecera">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" class="input"
+                    pattern="^[A-Za-záéíóúÁÉÍÓÚÑñ ]+$" title="Introduzca letras">
+                  </form>  
+            </div>
+
+             <div>
+                <form action="#cabecera">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" class="input"
+                    pattern="^[A-Za-z]+@[hotmail/gmail/yahoo]\.[a-z]{2-4}" title="Introduzca un email válido"><br><br>
+                  </form>  
+             </div>
+
+             <div id="pequeño">
+                <form action="#cabecera">
+                    <label for="apellido1">Primer apellido:</label>
+                    <input type="text" id="apellido1" name="apellido1" class="input"
+                    pattern="^[A-Za-záéíóúÁÉÍÓÚÑñ ]+$" title="Introduzca letras">
+    
+                  </form>  
+             </div>
+
+             <div id="pequeño">
+                <form action="#cabecera">
+                    <label for="apellido2">Segundo apellido:</label>
+                    <input type="text" id="apellido2" name="apellido2" class="input"
+                    pattern="^[A-Za-záéíóúÁÉÍÓÚÑñ ]+$" title="Introduzca letras">
+                    
+                  </form>  
+            </div>
+
+            <div id="pequeño">
+                <form action="#cabecera">
+                    <label for="edad">Fecha de nacimiento:</label>
+                    <input type="date" class="animated-button">
+                  </form>  
+             </div>
+
+             <div id="pequeño">
+                <form action="#cabecera"> 
+                    <label for="gusto1">Versión de Ricardo favorito:</label>
+                    <select id="musicafav" name="musicafav" class="animated-button">
+                        <option value="Base">Base</option>
+                        <option value="Fiestas">Fiestas</option>
+                        <option value="Presidente">Presidente</option>
+                        <option value="Pixel">Pixel</option>
+                        <option value="Pelo">Pelo</option>
+                        <option value="Navidad">Navidad</option>
+                        <option value="Inverso">Inverso</option>
+                        <option value="GigaRicardo">GigaRicardo</option>
+                        <option value="Ricarda">Ricarda</option>
+                    </select>
+                  </form>  
+             </div>
+
+             <div>
+                <form>
+                    <label for="favcolor">¿Color Ricardil favorito?:</label>
+                    <input type="color" id="favcolor" name="favcolor">
+                  </form>
+             </div>
+
+             <div>
+                <form>
+                    <label for="myfile">Escoge un archivo Ricardil:</label><br>
+                    <input type="file" id="myfile" name="myfile">
+                  </form>
+             </div>
+
+             <div>
+                <form>
+                    <label for="quantity">Ponle nota a Ricardo:</label>
+                    <input type="number" id="quantity" name="quantity" min="0" max="10">
+                  </form>
+             </div>
+
+             <div>
+                <form action="#cabecera">
+                    <label for="nombre">Pon lo que te de la Ricardal gana:</label><br>
+                    <input type="text" id="nombre" name="nombre" class="input">
+                  </form>  
+             </div>
+
+             <div id="ultimo">
+                <form action="#cabecera">
+                    <input type="checkbox" id="confirmacion" name="confirmacion" value="Acepto" required>
+                    <label for="confirmacion"> Marcando esta casilla acepto que esta página use mis datos
+                        con el único propósito de satisfacer la curiosidad de Ricardo y a su vez entiendo
+                        el hecho de que mis datos no se guardarán en esta página
+                    </label><br>
+                    <input type="submit" class="animated-button">
+                  </form>  
+             </div>
+                   
+
+        </article>
+
+        
+
+    </section>
+
+    <footer>
+        <h1><a href="#cabecera"> Volver Arriba </a></h1>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Permanent Marker', cursive;
+    color: #000000;
+    font-size: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    background-color: #ffffff;
+    border: 5px #000000 solid;
+    border-radius: 100%;
+    text-align: center;
+    padding: 1vw;
+}
+
+body{
+    background-image: url("../images/cesped.jpg");
+    align-content: center;
+}
+
+header{
+    background-image: url(../images/Ricardo.png);
+    background-repeat: round;
+    height: 5vw;
+    width: 98vw;
+    font-size: 150%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navegacion {
+    border-bottom: 5px black transparent;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+}
+
+.navegacion>div{
+    background-color: #ffffff;
+    height: 5vw;
+    margin: 6vw;
+    border: 5px #000000 solid;
+    border-radius: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navegacion>div>p{
+    font-size: 65%;
+}
+
+footer{
+    
+    background-image: url(../images/Ricardo.png);
+    background-repeat: round;
+
+    height: 5vw;
+    width: 98vw;
+    border-top:5px #000000 transparent;
+    border-top-right-radius: 25%;
+    border-top-left-radius: 25%;
+    font-size: 150%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor, .contenedor>nav, .contenedor>article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    background-image: url(../images/Ricardito.png);
+    background-repeat: round;
+
+
+    width: 50vw;
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+aside {
+    background-image: url(../images/Ricardito.png);
+    background-repeat: round;
+    
+    width: 50vw;
+    height: 80vh;
+    margin-right: 1vw;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ricardiv{
+    width: 98vw;
+    padding: 1vw;
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.ricardiv>div{
+    background-color: #ffffff;
+    width: auto;
+    height: auto;
+    
+    margin: 10px;
+    border: 10px #000000 solid;
+    border-radius: 100%;
+    border-bottom-left-radius: 75%;
+    border-bottom-right-radius: 75%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ricardiv>div>p {
+    margin: 50px;
+    font-size: 150%;
+}
+
+div>p{
+    padding: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+.Ricardo{
+   width: 175px;
+   height: 175px;
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.ricardiv:hover #mainricardo{
+    animation-name: botes;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes botes {
+    from {width: 550px;
+    height:100px}
+    to {width: 100px;
+    height: 550px}
+}
+
+#mainricardo {
+    width: 325px;
+   height: 325px;
+}
+
+#oculto {
+    width: 250px;
+    height: 250px;
+    opacity: 0;
+}
+
+#oculto:hover{
+    opacity:1
+}
+
+.hola {
+    position: fixed;
+    width: 1vw;
+    height: 1vw;
+    margin-top: 77vh;
+    margin-left: 1vw;
+    z-index: 2;
+}
+
+#especial{
+    margin-top: 74vh;
+    margin-left: -1.8vw;
+}
+
+@media (768px <= width <= 1024px){
+    .navegacion>div{
+        margin: 3vw;
+        
+    }
+
+    .navegacion {
+        height: auto;
+    }
+
+} 
+
+@media (width < 768px) {
+    header {
+        height: auto;
+        width: auto;
+    }
+
+    .navegacion{
+        margin: 0vw;
+        flex-direction: column;
+    }
+
+    .navegacion>div{
+        margin: 0vw;
+        
+    }
+
+    footer {
+        height: auto;
+        width: auto;
+    }
+
+    nav, aside{
+        display: none;
+    }
+
+    body {
+        align-content: center;
+    }
+
+    .Ricardo{
+        width: auto;
+        height: auto;
+       
+     }
+     
+     .ricardiv:hover #mainricardo{
+         animation-name: none;
+         
+     }
+}
